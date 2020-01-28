@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "NODE_ENV=development JWT_SECRET=iron_man node_modules/.bin/nodemon --delay 5 dist/index",
-    "gulp": "node_modules/.bin/gulp"
+    "build": "npm run gulp && npm run dev",
+    "gulp": "node_modules/.bin/gulp",
+    "start": "micro"
   },
   "keywords": [],
   "author": "",
@@ -37,6 +39,7 @@
     "jsonwebtoken": "8.1.0",
     "lodash": "4.17.4",
     "mysql2": "1.4.2",
-    "sequelize": "4.13.10"
+    "sequelize": "4.13.10",
+    "micro": "latest"
   }
 }
