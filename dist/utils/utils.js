@@ -46,3 +46,4 @@ exports.throwError = (condition, message) => {
         throw new Error(message);
     }
 };
+exports.JWT_SECRET = process.env.JWT_SECRET;
